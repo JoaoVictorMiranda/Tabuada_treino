@@ -48,3 +48,15 @@ function Terminar() {
     document.getElementById("pontuacao").innerHTML =
         `Sua pontuação foi ${pontos} e você teve ${erros} erros.`;
 }
+
+
+
+function Modal() {
+    document.getElementById("modal").style.display = "block";
+    document.getElementById("overlay").style.display = "block"; // <-- ativa o escurecimento
+}
+
+function FecharModal() {
+    document.getElementById("modal").style.display = "none";
+    document.getElementById("overlay").style.display = "none"; // <-- remove o escurecimento
+}

@@ -101,3 +101,43 @@ button:focus {
     margin-top: 20px;
     font-weight: bold;
 }
+
+.instrucoes {
+    background-color: var(--text-highlight);
+    color: black;
+}
+
+.modal {
+    background-color: var(--background-card);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, .4);
+    display: none;
+    position: absolute;
+    height: 500px;
+    text-align: left;
+    z-index: 99;
+}
+
+.modal p {
+    padding: .5rem;
+    font-size: 14pt;
+}
+
+.modal button {
+    display: block;
+    margin: auto;
+    margin-top: 5rem
+}
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 98;
+}

@@ -10,9 +10,12 @@
 </head>
 
 <body>
-    <h1>BEM VINDO A TABUADA.</h1> <button type="button" id="Comecar" class="comecar"
-        onclick="GerarAleatorio();">Começar</button>
-    <button type="button" id="terminar" onclick="Terminar()">Terminar</button>
+    <div id="overlay"></div>
+    <h1>BEM VINDO A TABUADA.</h1>
+    <div class="botoes">
+        <button type="button" id="Comecar" class="comecar" onclick="GerarAleatorio()">Começar</button>
+        <button type="button" id="terminar" onclick="Terminar()">Terminar</button>
+    </div>
     <div class="card">
         <div class="conta">
             <h3 id="Number1"></h3>
@@ -22,11 +25,18 @@
         <input id="Resposta" type="number" placeholder="Digite a resposta aqui">
         <button type="button" onclick="VerificarResposta();">Enviar resposta</button>
     </div>
+    <div class="modal" id="modal">
+        <h2>Instruções basicas de como usar</h2>
+        <p>Começar: Inicia o programa <br></p>
+        <p>Terminar: Finaliza o programa mostrando sua pontuação <br></p>
+        <p>Enviar resposta(Enter): Envia a resposta para verificar </p>
+        <button type="button" onclick="FecharModal()">Fechar</button>
+    </div>
 
 
     <h1 id="Mandar"></h1>
     <h2 id="pontuacao"></h2>
-
+    <button type="button" class="instrucoes" onclick="Modal()">Instruções</button>
 
     <script src="script.js"></script>
 </body>
