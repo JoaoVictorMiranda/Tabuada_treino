@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/algebra_2231431.png" type="image/x-icon">
+    <title>Tabuada</title>
+</head>
+
+<body>
+    <h1>BEM VINDO A TABUADA.</h1> <button type="button" id="Comecar" class="comecar"
+        onclick="GerarAleatorio();">Começar</button>
+    <button type="button" id="terminar" onclick="Terminar()">Terminar</button>
+    <div class="card">
+        <div class="conta">
+            <h3 id="Number1"></h3>
+            <h3>X</h3>
+            <h3 id="Number2"></h3>
+        </div>
+        <input id="Resposta" type="number" placeholder="Digite a resposta aqui">
+        <button type="button" onclick="VerificarResposta();">Enviar resposta</button>
+    </div>
+
+
+    <h1 id="Mandar"></h1>
+    <h2 id="pontuacao"></h2>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
